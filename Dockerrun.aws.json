@@ -4,5 +4,11 @@
       {
         "ContainerPort": "80"
       }
+    ],
+    "Volumes": [
+      {
+        "HostDirectory": "/wpfiles",
+        "ContainerDirectory": "/var/www/html/wp-content/uploads"
+      }
     ]
   }
