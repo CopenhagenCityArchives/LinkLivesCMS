@@ -11,3 +11,5 @@ ENV WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}
 
 # Extract theme into themes folder and remove unused files
 #RUN cd /tmp && unzip linklivestemplate.zip && mv linklivestemplate/wordpress/wp-content/themes/linklives/* ./wp-contents/themes/linklives && rm -rf linklivestemplate linklivestemplate.zip
+
+EXPOSE 80
