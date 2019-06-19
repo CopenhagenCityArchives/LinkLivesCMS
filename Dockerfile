@@ -13,7 +13,8 @@ RUN curl -o /tmp/linklivestemplate.zip -L https://github.com/CopenhagenCityArchi
 
 # Extract theme into themes folder and remove unused files
 RUN cd /tmp && unzip -o linklivestemplate.zip && \
-    mv /tmp/linklives-wordpress-theme-master/wordpress/wp-content/* /var/www/html/wp-content && \
+    mkdir -p /var/www/html/wp-content && \
+    cp -r /tmp/linklives-wordpress-theme-master/wordpress/wp-content/* /var/www/html/wp-content && \
     ls -l /var/www/html/wp-content
 #&& rm -rf linklivestemplate linklivestemplate.zip
 EXPOSE 80
