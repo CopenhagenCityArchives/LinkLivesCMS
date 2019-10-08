@@ -1,5 +1,4 @@
-
-# LinkLives CMS infrastructure
+# LinkLives CMS infrastructure [![Build Status](https://travis-ci.org/CopenhagenCityArchives/linklives-wordpress-infrastructure.svg?branch=master)](https://travis-ci.org/CopenhagenCityArchives/linklives-wordpress-infrastructure)
 This project is used to configure and deploy a consistent and scalable environtment for LinkLives' Wordpress site.
 
 # The basics
