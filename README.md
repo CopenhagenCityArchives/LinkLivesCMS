@@ -15,4 +15,5 @@ This project is deployed using ``eb deploy`` with the LinkLivesCMS environment s
 An automatic deployment of this project are instantiated whenever a new push is made on the master branch of LinkLivesWordpressTheme (see above).
 
 # Further reading
-This setup is partly inspired by this AWS tutorial: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html
+The setup is partly inspired by this AWS tutorial: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-hawordpress-tutorial.html
+The enforcement of https connections are based on this question on Stackoverflow (AND subsequent comments!): https://stackoverflow.com/questions/24297375/how-to-get-elastic-beanstalk-nginx-backed-proxy-server-to-auto-redirect-from-htt
