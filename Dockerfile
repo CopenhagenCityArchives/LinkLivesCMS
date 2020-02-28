@@ -8,5 +8,6 @@ ENV WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}
 ENV WORDPRESS_DEBUG=${WORDPRESS_DEBUG}
 
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
+RUN echo "display_errors = stderr" > $PHP_INI_DIR/conf.d/error_output.ini
 
 EXPOSE 80
