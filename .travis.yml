@@ -5,11 +5,11 @@ script:
   - docker build .
 deploy:
   provider: elasticbeanstalk
-  access_key_id: 
-    secure: "${AWS_ACCESS_KEY}"
-  secret_access_key:
-    secure: "${AWS_SECRET_ACCESS_KEY}"
-  region: "eu-west-1"  
-  app: "LinkLivesCMS"
-  env: "linklives-6"
-  bucket_name: "elasticbeanstalk-eu-west-1-282251075226"
+  access_key_id: ${AWS_ACCESS_KEY_ID}
+  secret_access_key: ${AWS_SECRET_ACCESS_KEY}
+  region: eu-west-1
+  app: LinkLivesCMS
+  env: linklives-6
+  bucket: elasticbeanstalk-eu-west-1-282251075226
+  label: linklives-${TRAVIS_COMMIT}
+  edge: true
