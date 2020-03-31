@@ -10,4 +10,7 @@ ENV WORDPRESS_DEBUG=${WORDPRESS_DEBUG}
 RUN echo "short_open_tag = Off" > $PHP_INI_DIR/conf.d/short_open_tag.ini
 RUN echo "display_errors = stderr" > $PHP_INI_DIR/conf.d/error_output.ini
 
+RUN mkdir /var/www/html/wp-admin && chown -R www-data:www-data /var/www/html/wp-admin
+RUN mkdir /var/www/html/wp-content && chown -R www-data:www-data /var/www/html/wp-content
+
 EXPOSE 80
