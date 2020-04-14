@@ -11,5 +11,4 @@ deploy:
   app: LinkLivesCMS
   env: linklives-6
   bucket: elasticbeanstalk-eu-west-1-282251075226
-  label: linklives-${TRAVIS_COMMIT}
   edge: true
