@@ -9,6 +9,6 @@ deploy:
   secret_access_key: ${AWS_SECRET_ACCESS_KEY}
   region: eu-west-1
   app: LinkLivesCMS
-  env: link-lives-12
+  env: linklives-6
   bucket: elasticbeanstalk-eu-west-1-282251075226
   edge: true
