@@ -13,6 +13,6 @@ RUN echo "display_errors = stderr" > $PHP_INI_DIR/conf.d/error_output.ini
 RUN mkdir /var/www/html/wp-admin && chown -R www-data:www-data /var/www/html/wp-admin
 RUN mkdir /var/www/html/wp-content && chown -R www-data:www-data /var/www/html/wp-content
 
-ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct'); define('WP_SITEURL','${WORDPRESS_SITEURL}'); define('WP_HOME','${WORDPRESS_HOME}');"
+ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct');"
 
 EXPOSE 80
