@@ -15,6 +15,6 @@ RUN echo "display_errors = stderr" > $PHP_INI_DIR/conf.d/error_output.ini
 RUN mkdir /var/www/html/wp-admin && chown -R www-data:www-data /var/www/html/wp-admin
 RUN mkdir /var/www/html/wp-content && chown -R www-data:www-data /var/www/html/wp-content
 
-ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct'); define('WP_HOME','https://beta.link-lives.dk'); define('WP_SITEURL','https://beta.link-lives.dk')"
+ENV WORDPRESS_CONFIG_EXTRA="define('FS_METHOD', 'direct'); define('WP_HOME','https://beta.link-lives.dk'); define('WP_SITEURL','https://beta.link-lives.dk');"
 
 EXPOSE 80
