@@ -3,6 +3,10 @@ services:
   - docker
 script:
   - docker build .
+  if branch = master:
+    - sed -i -e 's/{WORDPRESS_SITEURL}/https:\/\/link-lives.dk/' Dockerfile"
+  if branch = development:
+    - sed -i -e 's/{WORDPRESS_SITEURL}/https:\/\/beta.link-lives.dk/' Dockerfile"
 deploy:
   - provider: elasticbeanstalk
     access_key_id: ${AWS_ACCESS_KEY_ID}
