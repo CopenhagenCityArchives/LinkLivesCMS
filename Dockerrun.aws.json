@@ -7,16 +7,8 @@
     ],
     "Volumes": [
       {
-        "HostDirectory": "/wp-content/languages",
-        "ContainerDirectory": "/var/www/html/wp-content/languages"
-      },    
-      {
-        "HostDirectory": "/wp-content/plugins",
-        "ContainerDirectory": "/var/www/html/wp-content/plugins"
-      },
-      {
-        "HostDirectory": "/wp-content/uploads",
-        "ContainerDirectory": "/var/www/html/wp-content/uploads"
-      }          
+        "HostDirectory": "/wp-content",
+        "ContainerDirectory": "/var/www/html/wp-content"
+      }
     ]
   }
