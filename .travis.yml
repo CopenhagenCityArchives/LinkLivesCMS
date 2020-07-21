@@ -2,6 +2,7 @@ language: php
 services:
   - docker
 script:
+  - bash set-urls.sh
   - docker build .
 deploy:
   - provider: elasticbeanstalk
