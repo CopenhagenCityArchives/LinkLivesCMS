@@ -14,7 +14,7 @@ deploy:
     bucket: elasticbeanstalk-eu-west-1-282251075226
     edge: true
     on:
-      branch: master
+      branch: development
   - provider: elasticbeanstalk
     access_key_id: ${AWS_ACCESS_KEY_ID}
     secret_access_key: ${AWS_SECRET_ACCESS_KEY}
@@ -24,4 +24,4 @@ deploy:
     bucket: elasticbeanstalk-eu-west-1-282251075226
     edge: true
     on:
-      branch: development
+      branch: master
